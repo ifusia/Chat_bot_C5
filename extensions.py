@@ -33,7 +33,7 @@ class CryptoConverter:
         except ValueError:
             raise ConversionException(f'I need a number to convert, not a {amount}')
 
-        r = requests.get(f'https://api.exchangeratesapi.io/v1/convert?access_key={ACCESS_KEY}&from = {quote_ticker}&to = {base_ticker}&amount = {amount}')
+        r = requests.get(f'https://v6.exchangerate-api.com/v6/{ACCESS_KEY}/pair/{base_ticker}/{quote_ticker}/{amount}')
 
         total_base = json.loads(r.content)[keys[base]]
 
