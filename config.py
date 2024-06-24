@@ -1,5 +1,5 @@
 TOKEN = ''
-ACCESS_KEY = 'a9ab6d975bd7ec9da45eea83eac9e975'
+ACCESS_KEY = '4f4df53623f9a0662c8a5c70'
 
 keys = {
     'euro': 'EUR',
